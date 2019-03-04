@@ -1,0 +1,19 @@
+{
+  "name": "funsies-api",
+  "version": "1.0.0",
+  "description": "An express api to run the funsies react app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doub1ejack/funsies-express-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doub1ejack/funsies-express-api/issues"
+  },
+  "homepage": "https://github.com/doub1ejack/funsies-express-api#readme"
+}
