@@ -15,6 +15,8 @@ app.listen(PORT, () => {
 
 // stub out first route & response
 const moods = [{ mood: "excited about express!" }, { mood: "route-tastic!" }];
-app.get("/moods", (req, res, next) => {
+function moodRoute(req, res, next) {
   res.send(moods);
-});
+}
+app.get("/", moodRoute);
+app.get("/moods", moodRoute);
