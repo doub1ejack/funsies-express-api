@@ -4,7 +4,8 @@
   "description": "An express api to run the funsies react app.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start":"open http://localhost:4001/moods && node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/doub1ejack/funsies-express-api/issues"
   },
-  "homepage": "https://github.com/doub1ejack/funsies-express-api#readme"
+  "homepage": "https://github.com/doub1ejack/funsies-express-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
