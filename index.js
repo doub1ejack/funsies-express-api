@@ -1,3 +1,6 @@
+// use an .env file for the listening port
+require("dotenv").config();
+
 // Import the express library here
 const express = require("express");
 
@@ -5,7 +8,7 @@ const express = require("express");
 const app = express();
 
 // Invoke the app's `.listen()` method below:
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT; // || 4001;
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
