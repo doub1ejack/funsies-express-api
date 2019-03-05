@@ -13,10 +13,7 @@ app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
 
-// stub out first route & response
-const moods = [{ mood: "excited about express!" }, { mood: "route-tastic!" }];
-function moodRoute(req, res, next) {
-  res.send(moods);
-}
-app.get("/", moodRoute);
-app.get("/moods", moodRoute);
+// import router
+var router = express.Router();
+var routes = require("./routes/index");
+app.use("/", routes);
